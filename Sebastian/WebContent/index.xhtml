@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="resources/css/materialize.css" />
+	<link rel="stylesheet" href="resources/css/estilos.css" />
+	<title>ParqueSoft</title>
+</h:head>
+<body>
+	<h:form>
+		<div class="contenedor">
+
+			<!-- PRIMERA FILA -->
+			<div class="row">
+				<div class="col l12">
+					<div class="col l1">
+						<fieldset
+							style="border: 1px solid #000; height: 110px; margin-top: 10px; width: 100%;">
+							<p style="text-align: center; font-size: 14px;">LOGO
+								ORGANISMO DE TRANSITO</p>
+						</fieldset>
+					</div>
+					<div class="col l5">
+						<h6>
+							<b>INFORME POLICIAL DE ACCIDENTE DE TRÁNSITO</b>
+						</h6>
+						<fieldset style="height: 45px;" class="primera1">
+							<div class="col l6">
+								<h6>
+									<b>1. ORGANISMO DE TRÁNSITO</b>
+								</h6>
+							</div>
+							<div class="col l6">
+								<table style="width: 100%; height: 30px;">
+									<tr>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+									</tr>
+								</table>
+							</div>
+						</fieldset>
+						<fieldset style="height: 45px;" class="primera2"></fieldset>
+					</div>
+					<div class="col l2">
+						<fieldset class="primera3">
+							<table>
+								<tr class="primera32">
+									<td colspan="3"
+										style="text-align: center; border-radius: 1px solid black;"
+										class="primera321"><b>3. GRAVEDAD</b></td>
+								</tr>
+								<tr>
+									<td
+										style="text-align: center; font-size: 12px; border-radius: 1px solid black;"
+										class="primera321">CON MUERTOS <input type="checkbox" />
+									</td>
+									<td
+										style="text-align: center; font-size: 12px; border-radius: 1px solid black;"
+										class="primera321">CON HERIDOS</td>
+									<td
+										style="text-align: center; font-size: 12px; border-radius: 1px solid black;"
+										class="primera321">SOLO DAÑOS</td>
+								</tr>
+								<tr style="text-align: center;">
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+							</table>
+						</fieldset>
+					</div>
+					<div class="col l2" style="text-align: center;">
+						<img src="resources/img/codigoDeBarras.png"
+							style="height: 100px; margin-top: 25px; margin-left: 15px;" />
+					</div>
+					<div class="col l2" style="text-align: center;">
+						<img src="resources/img/SenadoColombia.png"
+							style="height: 100px; margin-top: 25px; margin-left: 15px;" />
+					</div>
+				</div>
+			</div>
+
+			<!-- SEGUNDA FILA -->
+			<div class="row">
+				<div class="col l12">
+					<div class="col l9">
+						<fieldset class="segunda1">
+							<div class="col l8">
+								<p>
+									<b>3. LUGAR O COORDENADAS GEOGRÁFICAS</b>
+								</p>
+								<table style="width: 40%; height: 30px;">
+									<tr>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+										<td style="border: 1px solid #000;"></td>
+									</tr>
+								</table>
+
+								<hr></hr>
+
+								<p>
+									<b>CÓDIGO DE RUTA VÍA Y KILOMETRO O SITIO, DIRECCIÓN Y
+										CIUDAD</b>
+								</p>
+							</div>
+							<div class="col l4">
+								<div class="col l12">
+									<table style="width: 30%;">
+										<tr>
+											<td>Lat.</td>
+											<td></td>
+											<td><input type="number" /></td>
+											<td><input type="number" /></td>
+											<td>°</td>
+											<td><input type="number" /></td>
+											<td><input type="number" /></td>
+											<td>*</td>
+											<td><input type="number" /></td>
+											<td><input type="number" /></td>
+											<td>""</td>
+										</tr>
+									</table>
+									<table style="width: 30%;" class="latyLang">
+										<tr>
+											<td>Long.</td>
+											<td></td>
+											<td><input type="number" /></td>
+											<td><input type="number" /></td>
+											<td>°</td>
+											<td><input type="number" /></td>
+											<td><input type="number" /></td>
+											<td>*</td>
+											<td><input type="number" /></td>
+											<td><input type="number" /></td>
+											<td>""</td>
+										</tr>
+									</table>
+								</div>
+								<div class="col l12"></div>
+							</div>
+						</fieldset>
+					</div>
+					<div class="col l3">
+						<fieldset class="segunda2">
+							<table>
+								<tr>
+									<td style="background-color: #B2A9B1;"><b>3.1
+											LOCALIDAD O COMUNA</b></td>
+								</tr>
+								<tr>
+									<td style="height: 70px;"></td>
+								</tr>
+							</table>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+
+			<!-- TERCERA FILA -->
+			<div class="row">
+				<div class="col l12">
+					<div class="col l6">
+						<fieldset class="tercera1">
+							<div class="col l12">
+								<b>4. FECHA Y HORA </b>
+							</div>
+							<div class="col l12">
+								<table>
+									<tr>
+										<td class="tercera11"><input type="number"
+											placeholder="D" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="D" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="M" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="M" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="A" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="A" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="A" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="A" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="h" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="h" /></td>
+										<td class="tercera11">:</td>
+										<td class="tercera11"><input type="number"
+											placeholder="m" /></td>
+										<td class="tercera11"><input type="number"
+											placeholder="m" /></td>
+									</tr>
+								</table>
+								<div style="text-align: center;">
+									<b>FECHA Y HORA DE OCURRECIA</b>
+								</div>
+							</div>
+							<table>
+								<tr>
+									<td class="tercera11"><input type="number" placeholder="D" /></td>
+									<td class="tercera11"><input type="number" placeholder="D" /></td>
+									<td class="tercera11"><input type="number" placeholder="M" /></td>
+									<td class="tercera11"><input type="number" placeholder="M" /></td>
+									<td class="tercera11"><input type="number" placeholder="A" /></td>
+									<td class="tercera11"><input type="number" placeholder="A" /></td>
+									<td class="tercera11"><input type="number" placeholder="A" /></td>
+									<td class="tercera11"><input type="number" placeholder="A" /></td>
+									<td class="tercera11"><input type="number" placeholder="h" /></td>
+									<td class="tercera11"><input type="number" placeholder="h" /></td>
+									<td class="tercera11">:</td>
+									<td class="tercera11"><input type="number" placeholder="m" /></td>
+									<td class="tercera11"><input type="number" placeholder="m" /></td>
+								</tr>
+							</table>
+							<div style="text-align: center;">
+								<b>FECHA Y HORA LEVANTAMIENTO</b>
+							</div>
+						</fieldset>
+					</div>
+					<div class="col l3">
+						<fieldset class="tercera2">
+							<table>
+								<tr>
+									<td colspan="4" style="font-size: 13px;" class="tercera21">5.
+										CLASE DE ACCIDENTE</td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;" class="tercera21">CHOQUE</td>
+									<td class="tercera21"><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;" class="tercera21">CAIDA
+										OCUPANTE</td>
+									<td class="tercera21"><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;" class="tercera21">ATROPELLO</td>
+									<td class="tercera21"><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;" class="tercera21">INCENDIO</td>
+									<td class="tercera21"><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;" class="tercera21">VOLCAMIENTO</td>
+									<td class="tercera21"><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;" class="tercera21">OTRO</td>
+									<td class="tercera21"><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+							</table>
+						</fieldset>
+					</div>
+					<div class="col l3">
+						<fieldset class="tercera3">
+							<table>
+								<tr>
+									<td colspan="2"
+										style="background-color: #B2A9B1; border-radius: 30px; font-size: 13px;"><b>5.1
+											CHOQUE CON</b></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;">VEHICULO</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;">TREN</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;">SEMOMENTE</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;">OBJETO FIJO</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+							</table>
+						</fieldset>
+					</div>
+				</div>
+
+				<div class="col l12">
+					<div class="col l5">
+						<fieldset class="tercera4">
+							<table>
+								<tr>
+									<td colspan="6"
+										style="background-color: #B2A9B1; border-radius: 30px; font-size: 13px;"><b>
+											5.2 OBJETO FIJO</b></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;">MURO</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;">SEMAFORO</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;">TARIMA CASETA</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;">POSTE</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;">INMUEBLE</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;">VEHICULO ESTACIONADO</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;">ÁRBOL</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;">HIDRATANTE</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;">OTRO</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+								</tr>
+								<tr>
+									<td style="font-size: 12px;">BARANDA</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td style="font-size: 12px;">VALLA, SEÑAL</td>
+									<td><h:selectManyCheckbox>
+											<f:selectItem itemValue="" />
+										</h:selectManyCheckbox></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</fieldset>
+					</div>
+				</div>
+			</div>
+
+			<!-- CUARTA FILA -->
+			<div class="row">
+				<div class="col l12">
+					<fieldset class="cuarto1">
+						<b>6. CARACTERÍSTICAS DEL LUGAR</b> <br></br>
+						<div class="col l4">
+							<fieldset class="cuarto2">
+								<table>
+									<tr>
+										<td colspan="2"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cuarta222"><b>6.1. ÁREA</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta222">RURAL</td>
+										<td class="cuarta222"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta222">*NACIONAL</td>
+										<td class="cuarta222"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta222">*DEPARTAMENTAL</td>
+										<td class="cuarta222"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta222">*MUNICIAPL</td>
+										<td class="cuarta222"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta222">URBANA</td>
+										<td class="cuarta222"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+						<div class="col l4">
+							<fieldset class="cuarto3">
+								<table>
+									<tr>
+										<td colspan="2"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cuarta333"><b> 6.2. SECTOR</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta333">RESIDENCIAL</td>
+										<td class="cuarta333"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta333">INDUSTRIAL</td>
+										<td class="cuarta333"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta333">COMERCIAL</td>
+										<td class="cuarta333"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+						<div class="col l4">
+							<fieldset class="cuarto4">
+								<table>
+									<tr>
+										<td colspan="4"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cuarta444"><b>6.3. ZONA</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta444">ESCOLAR</td>
+										<td class="cuarta444"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td style="font-size: 12px;" class="cuarta444">DEPROTIVA</td>
+										<td class="cuarta444"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta444">TURÍSTICA</td>
+										<td class="cuarta444"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td style="font-size: 12px;" class="cuarta444">PRIVADA</td>
+										<td class="cuarta444"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cuarta444">MILITAR</td>
+										<td class="cuarta444"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td style="font-size: 12px;" class="cuarta444">HOSPITALARIA</td>
+										<td class="cuarta444"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+						<div class="col l12">
+							<div class="col l4">
+								<fieldset class="cuarto5">
+									<table>
+										<tr>
+											<td colspan="8"
+												style="background-color: #B2A9B1; font-size: 13px;"
+												class="cuarto51"><b>6.4. DISEÑO</b></td>
+										</tr>
+										<tr>
+											<td style="font-size: 12px;" class="cuarto51">GLORIETA</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">PASO A
+												NIVEL</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">PASO
+												ELEVADO</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">PUENTE</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+										</tr>
+										<tr>
+											<td style="font-size: 12px;" class="cuarto51">INTERSECCIÓN</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">PONTÓN</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">PASO
+												INFERIOR</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">TRAMO DE
+												VIDA</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+										</tr>
+										<tr>
+											<td style="font-size: 12px;" class="cuarto51">LOTE O
+												PREDIO</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">CICLO RUTA</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">PEATONAL</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="cuarto51">TÚNEL</td>
+											<td class="cuarto51"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+										</tr>
+									</table>
+								</fieldset>
+							</div>
+							<div class="col l1"></div>
+							<div class="col l4">
+								<fieldset class="cuarto6">
+									<table>
+										<tr>
+											<td colspan="4"
+												style="background-color: #B2A9B1; font-size: 13px;"><b>6.5.
+													CONDICIÓN CLIMÁTICA</b></td>
+										</tr>
+										<tr>
+											<td style="font-size: 12px;">GRANIZO</td>
+											<td><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;">VIENTO</td>
+											<td><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+										</tr>
+										<tr>
+											<td style="font-size: 12px;">LLUVIA</td>
+											<td><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;">NORMAL</td>
+											<td><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+										</tr>
+										<tr>
+											<td style="font-size: 12px;">NIEBLA</td>
+											<td><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+								</fieldset>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+
+			<!-- FILA CINCO -->
+			<div class="row">
+				<div class="col l12">
+					<fieldset class="cinco1">
+						<b>7. CARACTERÍSTICAS DE LAS VÍAS</b> <br></br>
+						<div class="col l2">
+							<fieldset class="cinco2">
+								<table>
+									<tr>
+										<td colspan="3"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco21"><b>7.1 GEOMÉTRICAS</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">A.RECTA
+											CURVA</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">B.PLANO
+											PENDIENTE</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">BAHÍA DE
+											EST. CON ANDEN CON BERMA</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td colspan="3"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco21"><b>7.2 UTILIZACIÓN</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">UN SENTIDO</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">DOBLE
+											SENTIDO</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">REVERSILE</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">CONTRALUJO</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">CICLO VIA</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td colspan="3"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco21"><b>7.3 CALZADAS</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">UNA</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">DOS</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">TRES O MÁS</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">VARIABLE</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td colspan="3"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco21"><b>7.4 CARRILES</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">UNA</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">DOS</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">TRES O MÁS</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco21">VARIABLE</td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco21"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+						<div class="col l2">
+							<fieldset class="cinco3">
+								<table>
+									<tr>
+										<td colspan="4"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco31"><b>7.5 SUPERFICIE DE RODADURA</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">ASFALTO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">AFIRMADO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">ADOQUÍN</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">EMPEDRADO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">CONCRETO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">TIERRA</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">OTRO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td colspan="4"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco31"><b>7.6 ESTADO</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">BUENO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">CON HUECOS</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">DERRUMBES</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">EN
+											REPARACIÓN</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">HUNDIMIENTO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">INUNDADA</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">PARCHADA</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">RIZADA</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">FISURADA</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td colspan="4"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco31"><b>7.7 CONDICIONES</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">ACEITE</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">HÚMEDO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">LODO</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco31">ALCANTARILLA
+											DESTAPADA</td>
+										<td class="cinco31"></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco31"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+						<div class="col l2">
+							<fieldset class="cinco4">
+								<table>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">MATERIAL
+											ÓRGANICO</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">MATERIAL
+											SUELTO</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">SECA</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">OTRA</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td colspan="4"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco41"><b>7.8 ILUMINACIÓN ARTIFICIAL</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">A. CON</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">BUENA</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">MALA</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">B. SIN</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td colspan="4"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco41"><b>7.9 CONTROLES DE TRÁNSITO</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41"><b>A.
+												AGENTE DE TRÁNSITO</b></td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41"><b>B.
+												SEMÁFORO</b></td>
+										<td class="cinco41"></td>
+										<td class="cinco41"></td>
+										<td class="cinco41"></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">OPERANDO</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">INTERMITENTE</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">CON DAÑOS</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">APAGADO</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">OCULTO</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41"><b>C.
+												SEÑALES VERTICALES</b></td>
+										<td class="cinco41"></td>
+										<td class="cinco41"></td>
+										<td class="cinco41"></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">PARE</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">CEDA EL PASO</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">NO GIRE</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">SENTIDO VIAL</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">NO ADELANTAR</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">VELOCIDAD
+											MÁXIMA</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">OTRA</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco41">NINGUNA</td>
+										<td class="cinco41"></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco41"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+						<div class="col l3">
+							<fieldset class="cinco5">
+								<table>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51"><b>D.
+												SEÑALES HORIZONTALES</b></td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">ZONA
+											PEATONAL</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">LÍNEA DE
+											PARE</td>
+										<td class="cinco51"></td>
+										<td><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51"><b>LÍNEA
+												CENTRAL AMARILLA</b></td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">CONTINUA</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">SEGMENTADA</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51"><b>LÍNEA
+												DE CARRIL BLANCA</b></td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">CONTINUA</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">SEGMENTADA</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">LÍNEA DE
+											BORDE BLANCA</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">LINEA DE
+											BORDE AMARILLO</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">LÍNEA
+											ANTIBLOQUEO</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">FLECHAS</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">LEGENDAS</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">SÍMBOLOS</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">OTRA</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51"><b>E.
+												REDUCTOR DE VELOCIDAD</b></td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">BANDAS
+											SONORAS</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">RESALTO</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">MÓVIL</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">FIJO</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">SONCRIZADOR</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">ESTOPEROL</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco51">OTRO</td>
+										<td class="cinco51"></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco51"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+						<div class="col l2">
+							<fieldset class="cinco6">
+								<table>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61"><B>F.
+												DELINEADOR DE PISO</B></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">TACHA</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">ESTOPEROLES</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">TACHONES</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">ROYAS</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">BORDILLOS</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">TUBULADOR</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">BARRERAS
+											PLÁSTICAS</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">HITOS
+											TUBULARES</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">CONOS</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">OTRO</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td colspan="3"
+											style="background-color: #B2A9B1; font-size: 13px;"
+											class="cinco61"><b>7.10 VISIBILIDAD</b></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">CASETAS</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">CONSTRUCCIÓN</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">VALLAS</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">ÁRBOUVEGETACIÓN</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">VEHÍCULO
+											ESTACIONADO</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">ESCANDILAMIENTO</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">POSTE</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+									<tr>
+										<td style="font-size: 12px;" class="cinco61">OTROS</td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+										<td class="cinco61"><h:selectManyCheckbox>
+												<f:selectItem itemValue="" />
+											</h:selectManyCheckbox></td>
+									</tr>
+								</table>
+							</fieldset>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+
+			<!-- SEXTA FILA -->
+			<div class="row">
+				<div class="col l12">
+					<fieldset class="seis1">
+						<div class="col l5">
+							<div class="col l12">
+								<b>8. CONDUCTORES, VEHÍCULOS Y PROPIETARIOS</b> <br></br>
+							</div>
+							<div class="col l12">
+								<fieldset class="seis2">
+									<table>
+										<tr style="border: 1px solid #000;">
+											<td
+												style="background-color: #B2A9B1; border-radius: 30px; font-size: 13px;"
+												class="seis21"><b>8.1 CONDUCTOR</b></td>
+											<td style="font-size: 15px;" class="seis21">APELLIDOS Y
+												NOMBRES</td>
+											<td
+												style="font-size: 15px; border: 1px solid #000; text-align: center;"
+												class="seis21">DOC</td>
+										</tr>
+										<tr style="border: 1px solid #000; height: 30px;"
+											class="seis21">
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td style="border: 1px solid #000;" class="seis21"></td>
+										</tr>
+										<tr>
+											<td colspan="3" class="seis21"><b>DIRECCIÓN DE
+													DOMICILIO</b></td>
+										</tr>
+										<tr style="border: 1px solid #000; height: 50px;"
+											class="seis21">
+											<td colspan="3" class="seis21"><input type="text" /></td>
+										</tr>
+									</table>
+								</fieldset>
+							</div>
+						</div>
+						<div class="col l7">
+							<div class="col l12">
+								<b>VEHÍCULOS 1</b> <br></br>
+							</div>
+							<div class="col l12">
+								<fieldset class="seis3">
+									<table class="mitad">
+										<tr>
+											<td style="font-size: 12px; border: 1px solid #000;"
+												class="seis21">IDENTIFICACIÓN No.</td>
+											<td style="font-size: 12px; border: 1px solid #000;"
+												class="seis21">NACIONALIDAD</td>
+											<td colspan="6"
+												style="font-size: 12px; border: 1px solid #000;"
+												class="seis21">FECHA DE NACIMIENTO</td>
+											<td colspan="2"
+												style="font-size: 12px; border: 1px solid #000;"
+												class="seis21">SEXO</td>
+											<td colspan="2"
+												style="font-size: 12px; border: 1px solid #000;"
+												class="seis21">GRAVEDAD</td>
+										</tr>
+										<tr>
+											<td class="seis21"><input type="number" /></td>
+											<td class="seis21"><input type="text" /></td>
+											<td colspan="2" style="font-size: 15px;" class="seis21">DIA
+												<input type="number" />
+											</td>
+											<td colspan="2" style="font-size: 15px;" class="seis21">MES
+												<input type="number" />
+											</td>
+											<td colspan="2" style="font-size: 15px;" class="seis21">AÑO
+												<input type="number" />
+											</td>
+											<td style="font-size: 12px;" class="seis21"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="seis21"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="seis21">MUERTO</td>
+											<td style="font-size: 12px;" class="seis21"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+										</tr>
+										<tr>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td class="seis21" style="font-size: 12px;">HERIDO</td>
+											<td class="seis21"><h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+										</tr>
+										<tr style="border: 1px solid black;">
+											<td class="seis21" style="border: 1px solid black;">CIUDAD</td>
+											<td class="seis21">TELEFONO</td>
+											<td colspan="7"
+												style="font-size: 12px; border: 1px solid #000; width: 100%;"
+												class="seis21">SE PRACTICO EXAMEN - SI <h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox>
+											</td>
+										</tr>
+										<tr style="border: 1px solid #000;">
+											<td style="border: 1px solid #000;" class="seis21"></td>
+											<td style="border: 1px solid #000;" class="seis21"></td>
+											<td colspan="2"
+												style="font-size: 12px; border: 1px solid #000;"
+												class="seis21">AUTORIZÓ</td>
+											<td colspan="2"
+												style="font-size: 12px; border: 1px solid #000;"
+												class="seis21">EMBRIAGUEZ</td>
+											<td style="font-size: 12px;" class="seis21">GRADO</td>
+											<td colspan="2"
+												style="font-size: 12px; border: 1px solid #000;"
+												class="seis21">S. PSICOACTIVAS</td>
+										</tr>
+										<tr>
+											<td class="seis21"></td>
+											<td class="seis21"></td>
+											<td style="font-size: 12px;" class="seis21">SI <h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="seis21">NO <h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="seis21">POS <h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="seis21">NEG <h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="seis21"><input
+												type="number" /></td>
+											<td style="font-size: 12px;" class="seis21">SI <h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+											<td style="font-size: 12px;" class="seis21">NO <h:selectManyCheckbox>
+													<f:selectItem itemValue="" />
+												</h:selectManyCheckbox></td>
+										</tr>
+									</table>
+								</fieldset>
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</h:form>
+</body>
+</html>

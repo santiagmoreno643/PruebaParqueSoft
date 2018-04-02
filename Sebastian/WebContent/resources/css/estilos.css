@@ -1,0 +1,251 @@
+@charset "ISO-8859-1";
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/*Estilos de la primera fila*/
+.primera1 {
+	border-radius: 15px 15px 0px 0px;
+	border: 1px solid #000;
+}
+
+.primera2 {
+	border-radius: 0px 0px 15px 15px;
+	border: 1px solid #000;
+}
+
+.primera3 {
+	margin-top: 25px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	height: 100px;
+}
+
+.primera31 {
+	margin-top: -15px;
+}
+
+.primera321 {
+	padding: 0px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+/*Estilos de la segunda fila*/
+.latyLang {
+	margin-top: -40px;
+}
+
+.segunda1 {
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+.segunda2 {
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+/*Estilos de la tercera fila*/
+.tercera1 {
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+.tercera11 {
+	padding: 9px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.tercera2 {
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+.tercera21 {
+	padding: 11.4px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.tercera3 {
+	margin-left: 53px;
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+	border-radius: 15px 15px;
+}
+
+.tercera4 {
+	margin-top: 10px;
+	width: 100%;
+	border: 1px solid #000;
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+/*Estilos de la cuarta fila*/
+.cuarto1 {
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+.cuarto2 {
+	border: 1px solid #000;
+}
+
+.cuarta222 {
+	padding: 0px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.cuarto3 {
+	margin-left: -15px;
+	width: 100%;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+.cuarta333 {
+	padding: 10px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.cuarto4 {
+	margin-left: -30px;
+	width: 100%;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+.cuarta444 {
+	padding: 10px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.cuarto5 {
+	margin-left: -10px;
+	margin-top: 10px;
+	border: 1px solid #000;
+}
+
+.cuarto6 {
+	margin-top: 10px;
+	border: 1px solid #000;
+}
+
+/*Estilos de la cinco fila*/
+.cinco1 {
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+.cinco2 {
+	margin-left: -18px; 
+	width : 50%;
+	border: 1px solid #000;
+	width: 50%;
+}
+
+.cinco21 {
+	padding: 12.3px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.cinco3 {
+	margin-left: 28px; 
+	width : 50%;
+	border: 1px solid #000;
+	width: 50%;
+}
+
+.cinco31 {
+	padding: 8.2px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.cinco4 {
+	width: 50%;
+	margin-left: 72.7px;
+	border: 1px solid #000;
+}
+
+.cinco5 {
+	width: 50%;
+	margin-left: 93px;
+	border: 1px solid #000;
+}
+
+.cinco51 {
+	padding: 4.5px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.cinco6 {
+	margin-left: 3.4px;
+	width: 50%;
+	border: 1px solid #000;
+}
+
+.cinco61 {
+	padding: 11.4px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+/*Estilos de la sexta fila*/
+.seis1 {
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+.seis2 {
+	margin-left: -15px;
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
+
+.seis21 {
+	padding: 0px !important;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+.seis3 {
+	margin-left: -40px;
+	text-align: center;
+	width: 80%;
+	border-radius: 15px 15px;
+	border: 1px solid #000;
+}
